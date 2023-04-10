@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Mulish', sans-serif; */
+/* font-family: 'Delicious Handrawn', cursive; */
+
+/*elegí dos fuentes para utilizar, una para los h1 y la otra para el resto del proyecto*/
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: rgb(152, 247, 247);
+}
+
+/*alíneo el header al centro y coloco color de fondo*/
+header{
+    text-align: center;
+    background-color: rgb(247, 206, 152);
+}
+/* alíneo al centro*/
+main{
+    text-align: center;
+    }
+    /*alíneo a la izquierda y coloco color de fondo*/
+footer{
+    text-align: left;
+    background-color: rgb(184, 247, 122);
+}
+/*cambio la fuente y tamaño de los h1*/
+h1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: xx-large;
+}
+/*cambio color a algunos elementos*/
+.cambio-color{
+        color: blue;
+    }
+/*coloco el formulario a la izquierda*/
+.formulario{
+    text-align: left;
+}
+/*cambio fuente,color y tamaño*/
+.parrafo-color{
+    color: rgb(255, 80, 80);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
