@@ -47,3 +47,22 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
 }
+/*pongp la class para el home */
+.section-principal{
+    font-size: 30px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #3d4cc1, #007de6, #009fd5, #00b99e, #48cc60);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding: 30px 30px 20px 30px;
+}
+/*cambiamos fuente del título*/
+.cambio-fuente{
+    font-family: 'Delicious Handrawn', cursive;
+}
+/* cambiamos fuente del texto */
+.cambio-parrafo-home{
+    font-family: 'Chivo Mono', monospace;
+    text-align: justify;
+}
