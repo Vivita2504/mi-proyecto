@@ -16,8 +16,24 @@ body{
 
 /*alíneo el header al centro y coloco color de fondo*/
 header{
+    background-color: rgb(163, 236, 131);
+    height: 7.5rem; 
+}
+.navbar{
+    text-align: right;
+    padding: 1rem;
+    text-decoration: none;
     text-align: center;
-    background-color: rgb(247, 206, 152);
+}
+.navbar li{
+    display: inline;
+    list-style: none;
+    padding: 0.2rem;
+    border: 0.1rem solid gray;
+    margin: 1.5rem;
+}
+.navbar li a{
+    text-decoration: none;
 }
 /* alíneo al centro*/
 main{
@@ -65,4 +81,46 @@ h1{
 .cambio-parrafo-home{
     font-family: 'Chivo Mono', monospace;
     text-align: justify;
+}
+.card{
+    width: 10rem;
+    height: 16rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+}
+.card-image{
+    width: 9.8rem;
+    height: 9rem; 
+}
+.card-image-1{
+    width: 9.8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+.card-list{
+    list-style: none;
+}
+.card-name-product{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-actividad{
+    width: 220px;
+    height: 275px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 40px;
+    background-color: rgb(235, 175, 102);
+    box-shadow: 5px 5px 5px 5px;
+}
+.card-image-actividad{
+    width: 90px;
+    height: 90px;
+}
+.card-texto{
+    margin-top: 10px;
+    background-color: white;
 }
