@@ -11,7 +11,7 @@
 
 body{
     font-family: 'Mulish', sans-serif;
-    background-color: rgb(152, 247, 247);
+    background-color: rgb(129, 206, 237);
 }
 
 /*alíneo el header al centro y coloco color de fondo*/
@@ -19,22 +19,7 @@ header{
     background-color: rgb(163, 236, 131);
     height: 7.5rem; 
 }
-.navbar{
-    text-align: right;
-    padding: 1rem;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar li{
-    display: inline;
-    list-style: none;
-    padding: 0.2rem;
-    border: 0.1rem solid gray;
-    margin: 1.5rem;
-}
-.navbar li a{
-    text-decoration: none;
-}
+
 /* alíneo al centro*/
 main{
     text-align: center;
@@ -46,7 +31,7 @@ footer{
 }
 /*cambio la fuente y tamaño de los h1*/
 h1{
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Mulish', sans-serif;
     font-size: xx-large;
 }
 /*cambio color a algunos elementos*/
@@ -55,7 +40,9 @@ h1{
     }
 /*coloco el formulario a la izquierda*/
 .formulario{
+    margin-left: 10px;
     text-align: left;
+    padding-bottom: 20px;
 }
 /*cambio fuente,color y tamaño*/
 .parrafo-color{
@@ -75,46 +62,46 @@ h1{
 }
 /*cambiamos fuente del título*/
 .cambio-fuente{
-    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Mulish', sans-serif;
 }
 /* cambiamos fuente del texto */
 .cambio-parrafo-home{
     font-family: 'Chivo Mono', monospace;
     text-align: justify;
 }
-.card{
-    width: 10rem;
-    height: 16rem;
-    border: 2px solid black;
-    border-radius: 5px;
+
+.titulo-productos{
+    text-align: center;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 1rem;
+}
+.productos{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 220px;
+    height: px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 30px;
+    padding: 30px;
+    background-color: rgba(178, 191, 225, 0.879);
+    box-shadow: 5px 5px 5px 5px;
 }
 .card-image{
-    width: 9.8rem;
+    width: 9.7rem;
     height: 9rem; 
 }
 .card-image-1{
     width: 9.8rem;
     height: 8rem;
-    object-fit: cover;
+    margin-right: 10px;
 }
 .card-list{
     list-style: none;
 }
 .card-name-product{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.card-actividad{
-    width: 220px;
-    height: 275px;
-    border: 1px solid black;
-    border-radius: 8px;
-    margin: 20px;
-    padding: 40px;
-    background-color: rgb(235, 175, 102);
-    box-shadow: 5px 5px 5px 5px;
 }
 .card-image-actividad{
     width: 90px;
@@ -123,4 +110,123 @@ h1{
 .card-texto{
     margin-top: 10px;
     background-color: white;
+}
+
+
+
+nav{
+    display: flex;
+    background-color: #4a841577;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+nav div a{
+    text-decoration: none;
+}
+nav div a h1{
+    font-size: 2rem;
+    color: black;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 1.9rem;
+    font-size: 1.3rem;
+}
+nav ul li a{ 
+    text-decoration: none;
+    color: black;
+}
+
+
+.main-act-6{
+    display: flex ;
+    background-color: #0E0E0E;
+    justify-content: center;
+    align-items:  center; 
+}
+.contenedor-1{
+    display:flex;
+    width: 75%;
+    height: 650px;
+    background-color: #A64253;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.box-1{
+    width: 900px;
+    height: 400px;
+    background-color: #FAFAFA;
+    border-radius: 30px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+.img-act-6{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 50px;
+} 
+.contenido{
+    display: flex;
+    width:  100%;
+    height: 40%;
+    background-color: #080705;
+    justify-content: end;
+    align-items: end;
+    border-radius: 30px;
+}
+.parrafo{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    background-color: #080705;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 0px 30px;
+}
+.day{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    background-color: #70C1B3;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    color: #EFEFEF;
+    border-radius: 0px 0px 30px 0px;
+}
+.grados{
+    font-size: 6rem;
+    font-family: 'Poiret One', cursive;
+    font-weight: lighter;
+    color: #EFEFEF;
+    margin-right: 2rem;
+    padding-right: 1.5rem;
+}
+.cloud{
+    font-size: 3.5rem;
+    font-family: 'Poiret One', cursive;
+    font-weight: lighter;
+    color: #EFEFEF;
+    margin-right: 7rem;
+}
+.new{
+    font-size: 1.5rem;
 }
