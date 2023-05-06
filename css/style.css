@@ -12,23 +12,19 @@
 body{
     font-family: 'Mulish', sans-serif;
     background-color: rgb(129, 206, 237);
-}
+} 
 
 /*alíneo el header al centro y coloco color de fondo*/
 header{
     background-color: rgb(163, 236, 131);
-    height: 7.5rem; 
+    height: 150px; 
 }
 
 /* alíneo al centro*/
 main{
     text-align: center;
     }
-    /*alíneo a la izquierda y coloco color de fondo*/
-footer{
-    text-align: left;
-    background-color: rgb(184, 247, 122);
-}
+
 /*cambio la fuente y tamaño de los h1*/
 h1{
     font-family: 'Mulish', sans-serif;
@@ -63,6 +59,7 @@ h1{
 /*cambiamos fuente del título*/
 .cambio-fuente{
     font-family: 'Mulish', sans-serif;
+    padding-bottom: 25px;
 }
 /* cambiamos fuente del texto */
 .cambio-parrafo-home{
@@ -76,20 +73,22 @@ h1{
 }
 .productos{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 .card{
     width: 220px;
-    height: px;
+    height: 290px;
     border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 30px;
     margin: 30px;
     padding: 30px;
     background-color: rgba(178, 191, 225, 0.879);
     box-shadow: 5px 5px 5px 5px;
 }
 .card-image{
-    width: 9.7rem;
+    width: 10rem;
     height: 9rem; 
 }
 .card-image-1{
@@ -118,17 +117,18 @@ nav{
     display: flex;
     background-color: #4a841577;
     justify-content: space-between;
-    height: 120px;
+    height: 150px;
     align-items: center;
 }
 .nav-logo{
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 nav img{
     width: 100px;
     height: 100px;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 nav div a{
     text-decoration: none;
@@ -229,4 +229,148 @@ nav ul li a{
 }
 .new{
     font-size: 1.5rem;
+}
+
+
+/* acá arranca el footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    padding-top: 10px;
+    background-color: #92f5e6;
+}
+.info-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 80px;
+    padding-bottom: 10px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+.imagen-footer{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.img-footer{
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+.titulo-footer{
+    font-size: 1.2rem;
+    color: black;
+}
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    align-items: start;
+    margin-left: 50px;
+}
+div a{
+    text-decoration: none;
+    color: #0E0E0E;
+    font-size: 1.2rem;
+}
+ul li{
+    list-style: none;
+    align-items: center;
+}
+.redes{
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 7px;
+    margin-left: 15px;
+}
+.img-redes{
+    border-radius: 5px;
+}
+
+/* Entrega N°7 
+Tarea 1: cards con grid y media querys*/
+
+.productos-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+    background-color: #ef3271;
+    align-items: center;
+}
+@media(max-width: 1440px){
+    .productos-grid{
+        grid-template-columns: repeat(4,1fr);
+        background-color: #3917cc;
+    }
+}
+@media(max-width: 1024px){
+    .productos-grid{
+        grid-template-columns: repeat(3,1fr);
+        background-color: #cff758;
+    }
+} 
+@media(max-width: 768px){
+    .productos-grid{
+        grid-template-columns: repeat(2,1fr);
+        background-color: #3cf282;
+    }
+} 
+@media(max-width: 480px){
+    .productos-grid{
+        grid-template-columns: repeat(1,1fr);
+        background-color: #ae92f5;
+    }
+} 
+
+/* Tarea 2: galería con flex-wrap*/
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Tarea 3: footer responsivo */
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-rows: repeat(1,1fr); */
+    width:100%;
+    height:150px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3af563;
+}
+
+@media(max-width: 1440px){
+    .footer-grid{
+        grid-template-columns: repeat(6,1fr);
+        background-color: #3917cc;
+    }
+}
+@media(max-width: 1024px){
+    .footer-grid{
+        grid-template-columns: repeat(4,1fr);
+        background-color: #cff758;
+    }
+} 
+@media(max-width: 768px){
+    .footer-grid{
+        grid-template-columns: repeat(2,1fr);
+        background-color: #3cf282;
+    }
+} 
+@media(max-width: 480px){
+    .footer-grid{
+        grid-template-columns: repeat(1,1fr);
+        background-color: #ae92f5;
+    }
 }
